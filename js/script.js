@@ -1,10 +1,10 @@
 //buutony 
-var argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors;
+var argButtonName;
 
 
-buttonRock=document.getElementById('button-rock');
-buttonPaper=document.getElementById('button-paper');
-buttonScissors=document.getElementById('button-scissors');
+const buttonRock=document.getElementById('button-rock');
+const buttonPaper=document.getElementById('button-paper');
+const buttonScissors=document.getElementById('button-scissors');
 
 /**
  * Describe this function...
