@@ -22,7 +22,7 @@ function getMoveName(argMoveId) {
       return 'nozyczki'
   }
   else {
-    printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
+    printMessage(`Nie znam ruchu o id ${argMoveId}. Zakładam, że chodziło o "kamień".`);
     return 'kamien';
   }
 }
@@ -48,12 +48,10 @@ function displayResult(argPlayerMove, argComputerMove) {
   else {
     printMessage('Przegrywasz :(');
   }
-  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage(`Zagrałem ${argComputerMove}, a Ty ${argPlayerMove}`);
 }
 
-let computerMove, 
-playerMove=argButtonName, 
-randomNumber= Math.floor(Math.random() * 3 + 1);
+const computerMove, playerMove=argButtonName, randomNumber= Math.floor(Math.random() * 3 + 1);
 console.log('wybór ruchu gracza to: ' + playerMove);
 console.log('ruch gracza to: ' + playerMove);
 console.log('wylosowana liczba to: ' + randomNumber);
